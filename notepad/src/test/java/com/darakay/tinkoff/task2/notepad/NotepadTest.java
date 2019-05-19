@@ -1,5 +1,6 @@
 package com.darakay.tinkoff.task2.notepad;
 
+import com.darakay.tinkoff.task2.notepad.storage.SimpleStorage;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,7 +15,7 @@ public class NotepadTest {
 
     @Before
     public  void setUp() throws Exception {
-        notepad = new Notepad(new TestStorage());
+        notepad = new Notepad(new SimpleStorage());
     }
 
     @Test

@@ -1,12 +1,13 @@
-package com.darakay.tinkoff.task2.notepad;
+package com.darakay.tinkoff.task2.notepad.storage;
 
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import com.darakay.tinkoff.task2.notepad.EntryNotFoundException;
+import com.darakay.tinkoff.task2.notepad.NotepadEntry;
+import com.darakay.tinkoff.task2.notepad.NotepadEntryStorage;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.UUID;
 
-public class TestStorage implements NotepadEntryStorage
+public class SimpleStorage implements NotepadEntryStorage
 {
     private HashMap<UUID, NotepadEntry> entries = new HashMap<>();
 
